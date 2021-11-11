@@ -8,48 +8,49 @@
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Calculator</h1>
-    <id="display"></id>
-    
+<div class="calculator">
+    <p id="display"></p>
+    <div class=calcButtons>
     <!-- square root, exponents, pi & parentheses -->
     <div class="row1">
-    <button>^</button>
-    <button>x<sup>2</sup></button>
-    <button>&Sqrt;</button>
-    <button>&pi;</button>
+    <button id="item">^</button>
+    <button id="item">x<span><sup>2</sup></span></button>
+    <button id="item">&Sqrt;</button>
+    <button id="item">&pi;</button>
+    <button id="item">&divide;</button>
     </div>
     <div class="row2">
-    <button>(</button>
-    <button>)</button>
-    <button>del</button>
-    <button>clear</button>
+    <button id="item">(</button>
+    <button id="item">)</button>
+    <button id="item">del</button>
+    <button id="item" class="clearBtn">clear</button>
+    <button id="item">x</button>
     </div>  
     <!-- numbers, decimal & negative -->
   <div class="row3">
-    <button>9</button>
-    <button>8</button>
-    <button>7</button>
-    <button>6</button>
+    <button id="item">9</button>
+    <button id="item">8</button>
+    <button id="item">7</button>
+    <button id="item">6</button>
+    <button id="item">+</button>
 </div>
 <div class="row4">
-    <button>5</button>
-    <button>4</button>
-    <button>3</button>
-    <button>2</button>
+    <button id="item">5</button>
+    <button id="item">4</button>
+    <button id="item">3</button>
+    <button id="item">2</button>
+    <button id="item">-</button>
     </div>
     <div class="row5">
-    <button>1</button>
-    <button>0</button>
-    <button>.</button>
-    <button>(-)</button>
+    <button id="item">1</button>
+    <button id="item">0</button>
+    <button id="item">.</button>
+    <button id="item">(-)</button>
+    <button id="item">enter</button>
+    </div>
 </div>
-    <!-- basic signs & requirements -->
-    <button>&divide;</button>
-    <button>x</button>
-    <button>+</button>
-    <button>-</button>
-    <button>enter</button>
 
+</div>
 <script src="script.js"></script>
 </body>
 </html>
