@@ -9,44 +9,52 @@
 </head>
 <body>
 <div class="calculator">
-    <p id="display"></p>
+    <input id="display" type="text" placeholder="0">
     <div class=calcButtons>
+        <!-- row 1 -->
+     <div class="row0">
+     <button onclick="display('%')" id="item">%</button>
+     <button onclick="display('(')" id="item">(</button>
+     <button onclick="display(')')" id="item">)</button>
+     <button onclick="del()"id="item">del</button>
+     <button onclick="clr()" id="item">clear</button>
+     </div>
     <!-- square root, exponents, pi & parentheses -->
     <div class="row1">
-    <button id="item">^</button>
-    <button id="item">x<span><sup>2</sup></span></button>
-    <button id="item">&Sqrt;</button>
-    <button id="item">&pi;</button>
-    <button id="item">&divide;</button>
+    <button onclick="e()"id="item">e</button>
+    <button onclick="pow()"id="item">x<span><sup>2</sup></span></button>
+    <button onclick="sqrt()"id="item">&Sqrt;</button>
+    <button onclick="pi()"id="item">&pi;</button>
+    <button onclick="display('/')"id="item">&divide;</button>
     </div>
     <div class="row2">
-    <button id="item">(</button>
-    <button id="item">)</button>
-    <button id="item">del</button>
-    <button id="item" class="clearBtn">clear</button>
-    <button id="item">x</button>
+    <button onclick="sin()"id="item">sin </button>
+    <button onclick="cos()"id="item">cos</button>
+    <button onclick="tan()"id="item">tan</button>
+    <button onclick="log()"id="item">log</button>
+    <button onclick="display('*')"id="item">x</button>
     </div>  
     <!-- numbers, decimal & negative -->
   <div class="row3">
-    <button id="item">9</button>
-    <button id="item">8</button>
-    <button id="item">7</button>
-    <button id="item">6</button>
-    <button id="item">+</button>
+    <button onclick="display('9')" id="item">9</button>
+    <button onclick="display('8')" id="item">8</button>
+    <button onclick="display('7')" id="item">7</button>
+    <button onclick="display('6')" id="item">6</button>
+    <button onclick="display('+')" id="item">+</button>
 </div>
 <div class="row4">
-    <button id="item">5</button>
-    <button id="item">4</button>
-    <button id="item">3</button>
-    <button id="item">2</button>
-    <button id="item">-</button>
+    <button onclick="display('5')" id="item">5</button>
+    <button onclick="display('4')" id="item">4</button>
+    <button onclick="display('3')" id="item">3</button>
+    <button onclick="display('2')" id="item">2</button>
+    <button onclick="display('-')" id="item">-</button>
     </div>
     <div class="row5">
-    <button id="item">1</button>
-    <button id="item">0</button>
-    <button id="item">.</button>
-    <button id="item">(-)</button>
-    <button id="item">enter</button>
+    <button onclick="display('1')" id="item">1</button>
+    <button onclick="display('0')" id="item">0</button>
+    <button onclick="display('.')" id="item">.</button>
+    <button onclick="display('-')" id="item">(-)</button>
+    <button onclick="calculate()" id="item">enter</button>
     </div>
 </div>
 
